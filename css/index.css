@@ -1,0 +1,159 @@
+/* -----colors----- */
+
+/* blues = #0d41e1,
+        #0a85ed,
+        #00f0d0
+
+warms = #fd0000,
+        #ffff00
+
+green = #89fc00,
+        #c6ff00
+
+pink =  #ba01ff,
+        #2d00f7
+
+orage = #ff7b00,
+        #ff4800
+
+violet = #692cff */
+/* -----colors----- */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.opacity{
+    width: 33.33vw;
+    height: 33.33vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    /* background-color: transparent; */
+}
+.opacity:hover{
+    cursor: pointer;
+    /* background-color: rgba(0, 0, 0, 0.0); */
+}
+.item{
+    position: relative;
+    width: 33.33vw;
+    height: 33.33vh;
+}
+.num{
+    font-size: 20vh;
+    top: 4vh;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    position: absolute;
+    width: 33.33vw;
+    cursor: pointer;
+}
+.menu,
+.ganaste{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw;
+    justify-content: center;
+    position: fixed;
+    left: 20vw;
+    top: 20vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 #6b6b6b;
+    height: 60vh;
+    width: 60vw;
+    box-sizing: border-box;
+}
+.ganaste{
+    display: none;
+}
+
+.select,
+.button,
+.won,
+.difficulty{
+    text-align: center;
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #dddddd;
+    box-shadow: 0 0 5px 0 #ffa7a7;
+    font-family: arial;
+    font-size: 25px;
+    font-weight: bold;
+    color: #6b6b6b;
+}
+.won{
+    cursor: default;
+    font-size: 80px;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0 0 100px 0;
+}
+.difficulty{
+    cursor: default;
+    font-size: 30px;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0 0 10px 0;
+}
+.button:hover{
+    background-color: #b9b9b9;
+}
+/* -----ID----- */
+
+#section{
+    /* display: flex; */
+    width: 100vw;
+    height: 100vh;
+    background-color: lawngreen;
+}
+
+/* -----items__colors----- */
+#a{
+    background-color: rgb(13, 65, 225);
+}
+#b{
+    background-color: rgb(255, 123, 0);
+}
+#c{
+    background-color: rgb(45, 0, 247);
+}
+#d{
+    background-color: rgb(255, 255, 0);
+}
+#e{
+    background-color: rgb(253, 0, 0);
+}
+#f{
+    background-color: rgb(186, 1, 255);
+}
+#g{
+    background-color: rgb(198, 255, 0);
+}
+#h{
+    background-color: rgb(255, 72, 0);
+}
+#i{
+    background-color: rgb(10, 133, 237);
+}
+#j{
+    background-color: rgb(137, 252, 0);
+}
+#k{
+    background-color: rgb(105, 44, 255);
+}
+#l{
+    background-color: rgb(0, 240, 208);
+}
+/* -----ID----- */

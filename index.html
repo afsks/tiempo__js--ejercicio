@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="section">
+        <div class="container">
+            <div class="item" id="a" onclick="delete_a()">
+                <p class="num">0</p>
+                <div class="opacity" id="a__opacity"></div>
+            </div>
+            <div class="item" id="b" onclick="delete_b()">
+                <p class="num">1</p>
+                <div class="opacity" id="b__opacity"></div>
+            </div>
+            <div class="item" id="c" onclick="delete_c()">
+                <p class="num">2</p>
+                <div class="opacity" id="c__opacity"></div>
+            </div>
+            <div class="item" id="d" onclick="delete_d()">
+                <p class="num">3</p>
+                <div class="opacity" id="d__opacity"></div>
+            </div>
+            <div class="item" id="e" onclick="delete_e()">
+                <p class="num">4</p>
+                <div class="opacity" id="e__opacity"></div>
+            </div>
+            <div class="item" id="f" onclick="delete_f()">
+                <p class="num">5</p>
+                <div class="opacity" id="f__opacity"></div>
+            </div>
+            <div class="item" id="g" onclick="delete_g()">
+                <p class="num">6</p>
+                <div class="opacity" id="g__opacity"></div>
+            </div>
+            <div class="item" id="h" onclick="delete_h()">
+                <p class="num">7</p>
+                <div class="opacity" id="h__opacity"></div>
+            </div>
+            <div class="item" id="i" onclick="delete_i()">
+                <p class="num">8</p>
+                <div class="opacity" id="i__opacity"></div>
+            </div>
+            <!-- <div class="item" id="j" onclick="delete_j()">
+                <p class="num">9</p>
+                <div class="opacity" id="j__opacity"></div>
+            </div>
+            <div class="item" id="k" onclick="delete_k()">
+                <p class="num">10</p>
+                <div class="opacity" id="k__opacity"></div>
+            </div>
+            <div class="item" id="l" onclick="delete_l()">
+                <p class="num">11</p>
+                <div class="opacity" id="l__opacity"></div>
+            </div> -->
+            <div class="menu" id="menu">
+                <h3 class="difficulty">Select difficulty</h3>
+                <select class="select" name="dificultad" id="dificultad">
+                    <option value="10000">Easy</option>
+                    <option value="5000">Medium</option>
+                    <option value="1000">Hard</option>
+                </select>
+                <button id="start" class="button" onclick="start(dificultad)">Start</button>
+            </div>
+            <div id="restar" class="ganaste">
+                <h1 class="won">You won</h1>
+                <button class="button" onclick="restar()">Reiniciar</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
