@@ -56,7 +56,8 @@ body{
     cursor: pointer;
 }
 .menu,
-.ganaste{
+.ganaste,
+.game__over{
     display: flex;
     flex-direction: column;
     padding: 0 10vw;
@@ -71,9 +72,10 @@ body{
     width: 60vw;
     box-sizing: border-box;
 }
-.ganaste{
+.game__over{
     display: none;
 }
+
 
 .select,
 .button,
@@ -98,7 +100,15 @@ body{
     font-size: 80px;
     box-shadow: none;
     background-color: transparent;
-    margin: 0 0 100px 0;
+    margin: 0 0 50px 0;
+}
+#score{
+    font-family: arial;
+    font-weight: bold;
+    color: #6b6b6b;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
 }
 .difficulty{
     cursor: default;
@@ -154,7 +164,7 @@ body{
 
 @media (max-width: 425px){
     .menu,
-    .ganaste{
+    .game__over{
         display: flex;
         flex-direction: column;
         padding: 0 10vw;

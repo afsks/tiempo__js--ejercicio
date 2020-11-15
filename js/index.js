@@ -159,21 +159,19 @@ class Game {
         const numColor = click.target.dataset.number
         // console.log(click);
         // console.log(numColor);
+        // console.log(this.attempts);
+        // console.log(this.subLevel);
+        // console.log(this.secuence[this.subLevel]);
 
-
+        console.log("el subnivel es = " + this.secuence[this.subLevel] + " y los intentos son = " + this.attempts);
         if(numColor == this.secuence[this.subLevel]){
            this.changePosition()
            this.attemptCount()
         //    this.eliminateClickEvents()
 
-           if(this.attempts === 9){
-            this.youWin()
-            }
 
-        }else{
-            this.error++
-            if(this.error===9){
-                this.youLost()
+            if(this.attempts === 9){
+                document.getElementById("gameOver").style.display = "flex"
             }
         }
         
@@ -184,11 +182,19 @@ class Game {
     attemptCount(){
         this.attempts++
     }
-    youWin(){
+    score(){
+        
+    }
 
+
+
+    youWin(){
+        document.getElementById("restar").style.display = "flex"
+        document.getElementById("score").innerHTML = "Fails " + this.error
     }
     youLost(){
-
+        document.getElementById("restar__lost").style.display = "flex"
+        document.getElementById("score").innerHTML = "Hits " + this.attempts + "/9"
     }
 }
 
@@ -196,4 +202,9 @@ class Game {
 
 function start() {
     window.game = new Game ()
+}
+
+function restar() {
+    document.getElementById("gameOver").style.display = "none"
+    document.getElementById("menu").style.display = "flex"
 }

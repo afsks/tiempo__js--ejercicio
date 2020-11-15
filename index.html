@@ -48,14 +48,20 @@
             <div class="menu" id="menu">
                 <h3 class="difficulty">Select difficulty</h3>
                 <select class="select" name="dificultad" id="dificultad">
-                    <option value="1000">Easy</option>
-                    <option value="800">Medium</option>
-                    <option value="400">Hard</option>
+                    <option value="800">Easy</option>
+                    <option value="500">Medium</option>
+                    <option value="300">Hard</option>
                 </select>
                 <button id="btn-start" class="button" onclick="start()">Start</button>
             </div>
-            <div id="restar" class="ganaste">
+            <!-- <div id="restar" class="ganaste">
                 <h1 class="won">You won</h1>
+                <p id="score"></p>
+                <button class="button" onclick="restar()">Reiniciar</button>
+            </div> -->
+            <div id="gameOver" class="game__over">
+                <h1 class="won">Game over</h1>
+                <p id="score"></p>
                 <button class="button" onclick="restar()">Reiniciar</button>
             </div>
         </div>
